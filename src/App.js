@@ -31,11 +31,11 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-          <Gallery currentCategory={currentCategory}></Gallery>
-          <About></About>
+            <Gallery currentCategory={currentCategory}></Gallery>
+            <About></About>
           </>
         ) : (
-        <ContactForm></ContactForm>
+          <ContactForm></ContactForm>
         )}
       </main>
     </div>

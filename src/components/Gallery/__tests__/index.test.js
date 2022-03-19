@@ -4,6 +4,7 @@ import '@testing-library/jest-dom/extend-expect'
 import Gallery from '..'
 const portrait = { name: "portraits", description: "Portraits of people in my life" };
 
+
 afterEach(cleanup)
 
 describe('Gallery component', () => {
@@ -18,7 +19,7 @@ describe('Gallery component', () => {
   })
 });
 
-it('renders', () => {
+it('displays text', () => {
   const { getByTestId } = render(<Gallery currentCategory={portrait} />)
   expect(getByTestId('h1tag')).toHaveTextContent('Portraits')
 })
